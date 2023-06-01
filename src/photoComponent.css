@@ -1,5 +1,22 @@
 .div {
     width: 15rem;
     height: 23em;
-    box-shadow: 10px 10px 7px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+.photoDetails {
+    font-weight: bold;
+    color: white;
+    font-size: 1.3em;
+    margin-left: 0.7em;
+    word-break: wrap;
+    line-height: 20px;
+    margin-top: .5em;
+    text-transform: uppercase;
+}
+
+.location {
+    margin-top: 15em;
+    color: white;
+    margin-left: 1em;
 }
