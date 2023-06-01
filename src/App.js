@@ -2,16 +2,13 @@ import NavBar from "./navBar";
 import './App.css';
 import { useSelector } from "react-redux";
 import PhotoComponent from "./photoComponent";
+import Timer from "./timer";
 
 function App() {
   const data = useSelector((state => state.allPhotos));
-  console.log(data)
   const pic = data[0].src
 
-  const appStyle = {
-    width: "100%",
-    height: "100%",
-  };
+
 
   return (
       <div className="App">
@@ -19,6 +16,7 @@ function App() {
         <style>{`body {background-image: url(${pic})}`}</style>
            <NavBar />
            <PhotoComponent />
+           <Timer />
       </div>
   );
 }
