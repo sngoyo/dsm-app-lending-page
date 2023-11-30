@@ -1,0 +1,164 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
+ .container {
+     width: 35rem;
+     height: 40rem;
+     margin-top: 5rem;
+     opacity: 0.8;
+     animation: animateContact 2s ease-in;
+ }
+ 
+ .heading {
+     padding-left: 33%;
+     padding-top: 7%;
+     font-weight: bold;
+     font-size: 20px;
+     color: #ec9d0b;
+     animation: animateHeading 2s ease-in;
+ }
+ 
+ .formContainer {
+     margin-top: 20px;
+     display: grid;
+     grid-template-columns: 15rem 15rem;
+     justify-content: center;
+     grid-gap: 20px;
+ }
+ 
+ .nameField {
+     grid-column-start: 1;
+     grid-column-end: 3;
+     width: 31.2rem;
+     height: 4rem;
+     padding-left: 10px;
+     border: 2px solid black;
+     border-radius: 5px;
+ }
+ 
+ .emailField {
+     height: 3rem;
+     padding-left: 10px;
+     border: 2px solid black;
+     border-radius: 5px;
+ }
+ 
+ .phoneField {
+     height: 3rem;
+     padding-left: 10px;
+     border: 2px solid black;
+     border-radius: 5px;
+ }
+ 
+ .enquiryList {
+     grid-column-start: 1;
+     grid-column-end: 3;
+     height: 3rem;
+     padding-left: 10px;
+     border: 2px solid black;
+     border-radius: 5px;
+ }
+ 
+ .textarea {
+     grid-column-start: 1;
+     grid-column-end: 3;
+     height: 14rem;
+     border: 2px solid black;
+     border-radius: 5px;
+     padding-left: 10px;
+     padding-top: 10px;
+ }
+ 
+ .submitButton {
+     grid-column-start: 1;
+     grid-column-end: 3;
+     height: 3rem;
+     border: 2px solid black;
+     border-radius: 5px;
+     background-color: #da930f;
+     color: white;
+ }
+ 
+ .submitButton:hover {
+     background-color: green;
+     cursor: pointer;
+ }
+ 
+ @keyframes animateContact {
+     0% {
+         opacity: 0;
+         transform: scale(1);
+     }
+     100% {
+         opacity: 0.8;
+         transform: cale(1.4);
+     }
+ }
+ 
+ @keyframes animateHeading {
+     0% {
+         opacity: 0;
+         transform: translateY(-100%);
+     }
+     100% {
+         opacity: 0.8;
+         transform: translateY(0);
+     }
+ }
+ 
+ @media screen and (max-width: 480px) {
+     .container {
+         width: 18rem;
+         height: 28rem;
+         z-index: -8;
+         position: absolute;
+         top: 8rem;
+         left: 5rem;
+     }
+     .formContainer {
+         width: 16rem;
+         margin: auto;
+         margin-top: 22px;
+     }
+     .nameField {
+         width: 15rem;
+         height: 2rem;
+         margin-left: 8.1rem;
+         font-size: 12px;
+     }
+     .emailField {
+         margin-left: 8.1rem;
+         height: 2rem;
+         font-size: 12px;
+     }
+     .phoneField {
+         height: 2rem;
+         width: 6.9rem;
+         font-size: 12px;
+     }
+     .enquiryList {
+         width: 15rem;
+         height: 2rem;
+         margin-left: 8.1rem;
+         font-size: 12px;
+     }
+     .textarea {
+         width: 15rem;
+         margin-left: 8.1rem;
+         height: 8rem;
+         font-size: 12px;
+     }
+     .submitButton {
+         width: 15rem;
+         height: 2rem;
+         margin-left: 8.1rem;
+     }
+     .heading {
+         padding-left: 30%;
+         padding-top: 10%;
+         font-size: 12px;
+     }
+ }
