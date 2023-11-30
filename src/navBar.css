@@ -1,0 +1,136 @@
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
+                    
+                    .navbarContainer {
+                        z-index: 40;
+                    }
+                    
+                    .mobileresponsiveButtonContainer {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100vw;
+                        height: 3rem;
+                        background-color: #da930f;
+                        z-index: 10;
+                    }
+                    
+                    .buttonContainer {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 3rem;
+                        height: 2.5rem;
+                        gap: 4px;
+                        padding-top: 10px;
+                        margin-right: .3rem;
+                    }
+                    
+                    .line:hover {
+                        cursor: pointer;
+                    }
+                    
+                    .line {
+                        background-color: white;
+                        width: 100%;
+                        height: 0.4rem;
+                    }
+                    
+                    .contact {
+                        color: white;
+                        background-color: #b97c09;
+                        padding: 0.5rem;
+                        border-radius: 4px;
+                        width: 7rem;
+                        margin-top: -9px;
+                        padding-left: 1.5rem;
+                        box-shadow: inset 0 0 0 0 black;
+                        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+                    }
+                    
+                    li:not(.contact) {
+                        box-shadow: inset 0 0 0 0 #79756d;
+                        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+                    }
+                    
+                    li:hover:not(.contact) {
+                        box-shadow: inset 100px 0 0 0 #da930f;
+                        color: white;
+                    }
+                    
+                    li {
+                        font-size: 13px;
+                        padding-top: 0.2rem;
+                        border-radius: 3px;
+                        animation-delay: 1s;
+                        animation: links-animation 1s ease-in;
+                    }
+                    
+                    .contact:hover {
+                        box-shadow: 10px 10px 70px 5px #da930f;
+                        color: white;
+                    }
+                    
+                    @media screen and (max-width: 480px) {
+                        .navContainer {
+                            display: flex;
+                            flex-direction: column;
+                            background-color: #da930f;
+                            width: 13rem;
+                            gap: 8px;
+                            margin-top: 0;
+                            animation: nav-animation .7s ease-out both;
+                        }
+                        .nav {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 14px;
+                            padding-top: 1.8rem;
+                        }
+                        .homeClass {
+                            margin-left: 2.5rem;
+                        }
+                        .logo {
+                            padding-top: .8rem;
+                        }
+                    }
+                    
+                    @keyframes nav-animation {
+                        0% {
+                            opacity: 0;
+                            height: 1.5rem;
+                        }
+                        25% {
+                            opacity: 0;
+                            height: 4rem;
+                        }
+                        40% {
+                            opacity: 0;
+                            height: 10rem;
+                        }
+                        60% {
+                            opacity: 1;
+                            height: 15rem;
+                        }
+                        80% {
+                            opacity: 1;
+                            height: 20rem;
+                        }
+                        100% {
+                            opacity: 1;
+                            height: 26rem;
+                        }
+                    }
+                    
+                    @keyframes links-animation {
+                        0% {
+                            opacity: 0;
+                            transform: scale(0);
+                        }
+                        100% {
+                            opacity: 1;
+                            transform: scale(1);
+                        }
+                    }
