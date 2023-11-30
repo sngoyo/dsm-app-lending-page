@@ -1,7 +1,6 @@
 import { combineReducers } from "redux";
-import { photoReducer, photoIndexReducer } from "./reducers";
+import { photoReducer } from "./reducers";
 
 export const reducers = combineReducers({
     allPhotos: photoReducer,
-    photoIndexReducer,
 });
